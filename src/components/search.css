@@ -1,0 +1,30 @@
+.searchbar{
+    width : 500px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #f16331;
+    background-color: #ffffff;
+    border: 1px solid #f16331;
+    transition: 0.4s ease-out;
+}
+
+.searchbar:hover{
+    box-shadow: 0px 0px 8px 0px #f16331;
+    width: 550px;
+}
+
+@media all and (max-width: 580px) {
+
+    .searchbar{
+        width : 250px;
+    }
+
+    .searchbar:hover{
+        box-shadow: 0px 0px 8px 0px #f16331;
+        width: 260px;
+    }
+
+}

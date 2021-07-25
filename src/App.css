@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding : 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-dark{
+  display: flex;
+  background-color: #252422;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding : 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.logo{
+  max-width: 150px;
+  padding-left: 10px;
+}
+
+.midText{
+  color: #252422;
+  font-family: 'Pacifico', cursive;
+  font-size: 65px;
+  padding-bottom: 15px;
+}
+
+.midText-dark{
+  color: #f16331;
+  font-family: 'Pacifico', cursive;
+  font-size: 65px;
+  padding-bottom: 15px;
+}
+
+
+.res{
+  color: #252422;
+  font-family: 'Pacifico', cursive;
+  font-size: 65px;
+  padding-bottom: 15px;
+}
+
+.res-dark{
+  color: #f16331;
+  font-family: 'Pacifico', cursive;
+  font-size: 65px;
+  padding-bottom: 15px;
+}
+
+.search{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-dark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252422;
+  padding: 15px;
+  padding-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.restaurants{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  padding-top: 35px;
+  background-color: white;
+
+}
+
+.restaurants-dark{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  padding-top: 35px;
+  background-color: #252422;
+
+}
+
+.toggle{
+  width: 150px;
+  height: 45px;
+  margin: 30px;
+  padding: 10px;
+  transition: 0.4s ease-out;
+  color: #f16331;
+  background-color: #ffffff;
+  border: 1px solid #f16331;
+  border-radius: 15px;
+  outline: none;
+}
+
+.toggle:hover{
+  background-color: #f16331;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+}
+
+.toggle-dark{
+  width: 150px;
+  height: 45px;
+  margin: 30px;
+  padding: 10px;
+  transition: 0.4s ease-out;
+  color: #ffffff;
+  background-color: #252422;
+  border: 1px solid #f16331;
+  border-radius: 15px;
+  outline: none;
+}
+
+.toggle-dark:hover{
+  background-color: #f16331;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+}
+
+span:before{
+  content: '';
+  animation: animate infinite 8s;
+}
+
+@keyframes animate{
+  0%{
+    content: 'Hungry ?';
   }
-  to {
-    transform: rotate(360deg);
+  20%{
+    content: 'Eat Delicious Food';
   }
+  40%{
+    content: 'Hungry ?';
+  }
+  60%{
+    content: 'Try Chinese Cusine'
+  }
+  80%{
+    content: 'Eat - Sleep - Repeat';
+  }
+  100%{
+    content: 'Hungry ?';
+  }
+}
+
+.data{
+  display: none;
+}
+
+.no-display{
+  display: block;
+}
+
+@media all and (max-width: 600px) {
+
+  .midText{
+    font-size: 35px;
+  }
+
+  .midText-dark{
+    font-size: 35px;
+  }
+
+}
+
+@media all and (max-width: 350px) {
+
+  .midText{
+    font-size: 25px;
+  }
+
+  .midText-dark{
+    font-size: 25px;
+  }
+
 }
